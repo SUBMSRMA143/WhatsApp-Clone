@@ -14,13 +14,27 @@
     overflow: hidden;
 }
 
-.avatar img {
+.chat-avatar {
+    position: relative;
+    min-width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    overflow: hidden;
+    flex: 1;
+}
+
+.avatar img,
+.chat-avatar img {
     position: absolute;
     top: 0px;
     left: 0px;
     width: 100%;
     height: 100%;
     object-fit: cover;
+}
+
+.chat-header-right {
+    margin-left: 150px;
 }
 
 .chat-header-right img {
@@ -30,13 +44,17 @@
     opacity: 0.4;
 }
 
+#reload {
+    opacity: 0.7;
+}
+
 body {
     overflow: hidden;
     display: flex;
 }
 
 .side-bar {
-    flex: 5.17;
+    flex: 15.17;
 }
 
 .header {
@@ -49,5 +67,95 @@ body {
 }
 
 .message-container {
-    flex: 12;
+    flex: 22;
+}
+
+.message-header-right img {
+    width: 30px;
+    height: 30px;
+    margin: 5px 13px;
+    opacity: 0.4;
+}
+
+.chat-title {
+    display: flex;
+    align-items: center;
+}
+
+.message-header-content {
+    margin-left: 15px;
+}
+
+.message-header-content h4 {
+    font-weight: 400;
+}
+
+.message-header-content p {
+    font-size: 14px;
+    color: gray;
+}
+
+.sidebar-search-container img {
+    width: 30px;
+    height: 30px;
+    margin: 5px 13px;
+    opacity: 0.4;
+}
+
+.sidebar-search {
+    display: flex;
+    align-items: center;
+    background-color: #f6f6f6;
+    padding: 8px 15px;
+}
+
+.sidebar-search-container {
+    display: flex;
+    align-items: center;
+    background-color: white;
+    width: 100%;
+    height: 35px;
+    border-radius: 20px;
+}
+
+.sidebar-search-container input {
+    border: none;
+    outline: none;
+    margin-left: 15px;
+}
+
+.sidebar-chats {
+    height: calc(100vh - 115px);
+    overflow-y: scroll;
+}
+
+.sidebar-chat {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 10px 12px;
+    width: 100%;
+}
+
+.chat-info {
+    margin-left: 15px;
+    flex: 10;
+}
+
+.chat-info p {
+    font-size: 13px;
+    color: gray;
+    line-height: 20px;
+}
+
+.time {
+    flex: 1;
+}
+
+.time p {
+    white-space: nowrap;
+    font-size: 13px;
+    color: gray;
+    margin-top: -15px;
 }
