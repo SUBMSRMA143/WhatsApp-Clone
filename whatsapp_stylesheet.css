@@ -6,6 +6,22 @@
     font-family: 'Roboto', sans-serif;
 }
 
+::-webkit-scrollbar {
+    width: 6px;
+}
+
+::-webkit-scrollbar-track {
+    background: none;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #b9b3ae;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #888;
+}
+
 .avatar {
     position: relative;
     width: 40px;
@@ -16,8 +32,8 @@
 
 .chat-avatar {
     position: relative;
-    min-width: 50px;
-    height: 50px;
+    min-width: 45px;
+    height: 45px;
     border-radius: 50%;
     overflow: hidden;
     flex: 1;
@@ -138,6 +154,24 @@ body {
     width: 100%;
 }
 
+.sidebar-chat:hover {
+    background-color: #e8e4e4;
+}
+
+.sidebar-chat:nth-child(2) {
+    background-color: rgb(225, 224, 224);
+}
+
+.sidebar-chat::before {
+    content: '';
+    position: absolute;
+    width: 80%;
+    bottom: 0;
+    left: 80px;
+    border-bottom: 1px solid #999;
+    opacity: 0.2;
+}
+
 .chat-info {
     margin-left: 15px;
     flex: 10;
@@ -158,4 +192,10 @@ body {
     font-size: 13px;
     color: gray;
     margin-top: -15px;
+}
+
+.message-content {
+    background-image: url(1141582.jpg);
+    background-position: center;
+    height: calc(100vh - 120px);
 }
