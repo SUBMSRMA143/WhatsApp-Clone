@@ -33,6 +33,7 @@
 body {
     overflow: hidden;
     display: flex;
+    background-color: red;
 }
 
 .side-bar {
