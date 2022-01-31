@@ -195,7 +195,55 @@ body {
 }
 
 .message-content {
-    background-image: url(1141582.jpg);
+    background-image: url('https://qph.fs.quoracdn.net/main-qimg-87d0c9dc29c4e7061b6ccc1aacf45cd9');
     background-position: center;
     height: calc(100vh - 120px);
+    padding: 20px 80px;
+    overflow-y: scroll;
+}
+
+.chat-message {
+    font-size: 14px;
+    padding: 8px 10px;
+    width: fit-content;
+    border-radius: 18px 18px 18px 0px;
+    background-color: white;
+    margin-bottom: 30px;
+}
+
+.chat-timestamp {
+    font-size: 10px;
+    color: gray;
+    margin-left: 13px;
+}
+
+.chat-sent {
+    margin-left: auto;
+    background-color: #dcf8c6;
+    border-radius: 18px 18px 0px 18px;
+}
+
+.message-footer img {
+    width: 30px;
+    height: 30px;
+    margin: 5px 13px;
+    opacity: 0.4;
+    flex: 1;
+}
+
+.message-footer {
+    display: flex;
+    align-items: center;
+    padding: 5px 10px;
+    background-color: rgb(227, 219, 219);
+}
+
+.message-footer input {
+    flex: 20;
+    margin: 5px 10px;
+    padding: 12px 15px;
+    outline: none;
+    border: none;
+    border-radius: 20px;
+    font-size: 13px;
 }
